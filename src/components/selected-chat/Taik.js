@@ -122,7 +122,7 @@ const Taik = () => {
                     id='file-input'
                     type='file'
                     onChange={(e) => handleChangeImage(e.target.files[0])}
-                    accept='image/png, image/jpeg, image/jpg'
+                    accept='image/*'
                   />
                   <h5 className='mt-3'>المعرض</h5>
                 </div>
