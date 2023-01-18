@@ -1,0 +1,14 @@
+.login {
+  .box {
+    & {
+      @media (max-width: 576px) {
+        width: 100% !important;
+      }
+    }
+  }
+  .phone-login {
+    .forget-pass {
+      color: #0029ff;
+    }
+  }
+}
