@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import ShareLayout from './components/shared-components/ShareLayout';
 
 // All PAges
@@ -21,7 +21,7 @@ import RequireAuth from './components/shared-components/RequireAuth';
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<ShareLayout />}>
             <Route index element={<Home />}></Route>
@@ -49,7 +49,7 @@ function App() {
             <Route path='user/:id' element={<SelectedChat />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
