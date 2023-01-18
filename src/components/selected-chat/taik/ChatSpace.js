@@ -45,11 +45,7 @@ const ChatSpace = () => {
                     </p>
                   </div>
                 )}
-                {m.img && (
-                  <div className='message bg-light py-3 px-2 rounded d-flex '>
-                    <img src={m.img} className='avatar'></img>
-                  </div>
-                )}
+                {m.img && <img src={m.img} className='chat-image'></img>}
               </div>
             ) : (
               <div
@@ -63,11 +59,7 @@ const ChatSpace = () => {
                     </p>
                   </div>
                 )}
-                {m.img && (
-                  <div className='message bg-light py-3 px-2 rounded d-flex '>
-                    <img src={m.img} className='avatar'></img>
-                  </div>
-                )}
+                {m.img && <img src={m.img} className='chat-image'></img>}
               </div>
             )}
           </>
