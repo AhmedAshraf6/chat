@@ -12,11 +12,11 @@ const SelectedChat = () => {
   }, []);
   return (
     <div className='selected-chat mt-3 mx-3  '>
-      <div className='row gy-2'>
+      <div className='row gy-2 d-flex flex-column-reverse flex-lg-row'>
         <div className='col-lg-5'>
           <AllChats />
         </div>
-        <div className='col-lg-7 '>
+        <div className='col-lg-7'>
           <UserChat />
         </div>
       </div>
