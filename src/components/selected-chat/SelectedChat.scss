@@ -26,9 +26,11 @@
         outline: 0 !important;
       }
     }
-    .modal {
-      input {
-        display: none;
+    .taik {
+      .removed-input {
+        input {
+          display: none !important;
+        }
       }
     }
   }

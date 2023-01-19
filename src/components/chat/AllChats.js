@@ -40,9 +40,6 @@ const AllChats = () => {
     }
   };
 
-  const handleKey = (e) => {
-    e.code === 'Enter' && handleSearch();
-  };
   if (user) {
     console.log(user);
   }
@@ -106,7 +103,7 @@ const AllChats = () => {
   };
   // Rended All Chats
   return (
-    <div className='all-chats bg-primary rounded py-4 h-100'>
+    <div className='all-chats bg-primary rounded py-4  overflow-auto '>
       <div
         className='btn-group mx-2 d-flex flex-column flex-sm-row gap-2 justify-content-center'
         role='group'
@@ -136,7 +133,7 @@ const AllChats = () => {
           class='form-control'
           id='exampleFormControlInput1'
           placeholder='ابحث عن المسخدم'
-          onKeyDown={handleKey}
+          onKeyUp={handleSearch}
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
